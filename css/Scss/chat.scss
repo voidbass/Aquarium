@@ -1,0 +1,78 @@
+@import "./common/font";
+
+#chat-onl {
+  position: fixed;
+  width: 320px;
+  height: 420px;
+  bottom: -60%;
+  right: 2%;
+  color: black;
+  transition: .3s;
+  z-index: 999;
+
+  .contact-onl {
+    font-family: "Oswald", sans-serif;
+    border-radius: 0;
+    cursor: pointer;
+  }
+
+  #message {
+    background-color: white;
+
+    .info-chat {
+      border: 1px solid lightgray;
+
+      .icon-chat {
+        display: inline-block;
+      }
+
+      .title-chat {
+        font-family: $font-oswald;
+        display: inline-block;
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      .chat-web p {
+        font-family: $font-pacifico;
+        height: 220px;
+      }
+    }
+
+    .chat-user {
+      height: 50px;
+      border: 1px solid lightgray;
+
+      input {
+        font-family: $font-pacifico;
+        width: 90%;
+        height: 48px;
+        border: none;
+        font-style: italic;
+        outline: none;
+
+        &::placeholder {
+          color: black!important;
+        }
+      }
+    }
+  }
+}
+
+.open{
+  bottom: -1%!important;
+}
+
+@media (max-width: 1200px) {
+  #chat-onl {
+    display: none;
+  }
+}
+
+@media (max-height: 630px) {
+  #chat-onl {
+    display: none;
+  }
+}

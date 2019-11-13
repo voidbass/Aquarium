@@ -1,0 +1,534 @@
+body {
+  position: relative; }
+  body h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Unica One", cursive;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body h4, body h3 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body p, body a {
+    font-family: "Oswald", sans-serif; }
+  body .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  body .navbar {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 300ms ease;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99; }
+    body .navbar:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.6); }
+  body .my-header {
+    height: -50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 0; }
+  body .navbar-nav {
+    font-family: "Unica One", cursive; }
+    body .navbar-nav .nav-item a {
+      position: relative;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 50px;
+      letter-spacing: 1px;
+      height: 80%; }
+      body .navbar-nav .nav-item a::after {
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: white;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        transition: 200ms ease; }
+      body .navbar-nav .nav-item a:hover:not(.active)::after {
+        width: 100%; }
+  body .active {
+    border-bottom: 1px solid white; }
+  body h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Unica One", cursive;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body h4, body h3 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body p, body a {
+    font-family: "Oswald", sans-serif; }
+  body .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  body .background-banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../images/background-top.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; }
+    body .background-banner:hover::after {
+      bottom: 0; }
+    body .background-banner .introduce {
+      padding-top: 20%;
+      box-sizing: border-box; }
+      body .background-banner .introduce h1 {
+        font-family: "Pacifico", cursive;
+        font-size: 4rem;
+        font-weight: 500; }
+      body .background-banner .introduce .btn-default {
+        background-color: transparent;
+        font-family: "Unica One", cursive;
+        font-size: 1.5rem;
+        font-weight: none;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.7);
+        min-width: 50%;
+        font-weight: 700;
+        box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.2);
+        position: relative;
+        overflow: hidden; }
+        body .background-banner .introduce .btn-default::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: #4598c8;
+          transform: skew(35deg);
+          position: absolute;
+          left: -80%;
+          right: 0;
+          top: 0;
+          transition: 500ms ease; }
+        body .background-banner .introduce .btn-default:hover {
+          border: 2px solid white; }
+          body .background-banner .introduce .btn-default:hover::after {
+            left: 120%; }
+          body .background-banner .introduce .btn-default:hover span {
+            color: white; }
+  body #chat-onl {
+    position: fixed;
+    width: 320px;
+    height: 420px;
+    bottom: -60%;
+    right: 2%;
+    color: black;
+    transition: .3s;
+    z-index: 999; }
+    body #chat-onl .contact-onl {
+      font-family: "Oswald", sans-serif;
+      border-radius: 0;
+      cursor: pointer; }
+    body #chat-onl #message {
+      background-color: white; }
+      body #chat-onl #message .info-chat {
+        border: 1px solid lightgray; }
+        body #chat-onl #message .info-chat .icon-chat {
+          display: inline-block; }
+        body #chat-onl #message .info-chat .title-chat {
+          font-family: "Oswald", sans-serif;
+          display: inline-block; }
+          body #chat-onl #message .info-chat .title-chat span {
+            font-weight: 700; }
+        body #chat-onl #message .info-chat .chat-web p {
+          font-family: "Pacifico", cursive;
+          height: 220px; }
+      body #chat-onl #message .chat-user {
+        height: 50px;
+        border: 1px solid lightgray; }
+        body #chat-onl #message .chat-user input {
+          font-family: "Pacifico", cursive;
+          width: 90%;
+          height: 48px;
+          border: none;
+          font-style: italic;
+          outline: none; }
+          body #chat-onl #message .chat-user input::placeholder {
+            color: black !important; }
+  body .open {
+    bottom: -1% !important; }
+  @media (max-width: 1200px) {
+    body #chat-onl {
+      display: none; } }
+  @media (max-height: 630px) {
+    body #chat-onl {
+      display: none; } }
+  body h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Unica One", cursive;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body h4, body h3 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body p, body a {
+    font-family: "Oswald", sans-serif; }
+  body .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  body .owl-item {
+    width: 10% !important; }
+  body .owl-theme .owl-controls {
+    display: none !important; }
+  body .clickable {
+    display: none !important; }
+  body .item {
+    position: relative;
+    overflow: hidden; }
+    body .item .subitem-top {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 10%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      top: 0;
+      left: 0; }
+    body .item .subitem-bottom {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 10%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      bottom: 0;
+      right: 0; }
+    body .item .subitem-right {
+      position: absolute;
+      content: '';
+      width: 10%;
+      height: 90%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      top: 0;
+      right: 0; }
+    body .item .subitem-left {
+      position: absolute;
+      content: '';
+      width: 10%;
+      height: 90%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      bottom: 0;
+      left: 0; }
+    body .item:hover .subitem-top, body .item:hover .subitem-bottom {
+      height: 0;
+      width: 100%; }
+    body .item:hover .subitem-left, body .item:hover .subitem-right {
+      width: 0;
+      height: 100%; }
+    body .item:hover .item-content {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 1px solid transparent; }
+    body .item:hover .img-bg img {
+      transform: scale(1); }
+    body .item .img-bg img {
+      width: 100%;
+      transform: scale(1.3);
+      transition: 800ms ease-in-out; }
+    body .item .item-content {
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 80%;
+      height: 80%;
+      color: white;
+      margin: auto;
+      border: .3rem solid white;
+      transition: width .4s, height .4s, border .6s, background .6s; }
+      body .item .item-content h4 {
+        position: absolute;
+        bottom: 0; }
+  body #discovery {
+    position: relative; }
+    body #discovery::before {
+      content: "discovery";
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Unica One", cursive;
+      font-size: 1.9rem;
+      font-weight: 500;
+      width: 5.4em;
+      height: 17%;
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      background-color: white;
+      text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: top 400ms ease; }
+    body #discovery:hover::before {
+      top: -17%; }
+  body h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Unica One", cursive;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body h4, body h3 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body p, body a {
+    font-family: "Oswald", sans-serif; }
+  body .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  body .intro {
+    padding: 0;
+    color: white;
+    width: 100%;
+    background-image: url("../../images/explore-bg2.jpg");
+    background-size: cover;
+    background-position: center center; }
+  body .about-us {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem; }
+    body .about-us .img-about {
+      position: relative; }
+      body .about-us .img-about img {
+        border-radius: .2rem;
+        width: 100%;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); }
+      body .about-us .img-about .info-about-founder {
+        border-radius: .2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-family: "Unica One", cursive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 74%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all 300ms ease; }
+      body .about-us .img-about:hover .info-about-founder {
+        top: 0; }
+  body h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Unica One", cursive;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body h4, body h3 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body p, body a {
+    font-family: "Oswald", sans-serif; }
+  body .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  body .news-bg {
+    width: 100%;
+    background-image: url("../../images/news-back.jpg");
+    background-size: cover;
+    background-position: center center; }
+    body .news-bg .card {
+      border: none;
+      width: 100%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      transition: 200ms ease; }
+      body .news-bg .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.6); }
+      body .news-bg .card h4 {
+        color: black; }
+  body h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Unica One", cursive;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body h4, body h3 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body p, body a {
+    font-family: "Oswald", sans-serif; }
+  body .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  body .ticket-bg {
+    width: 100%;
+    background-image: url("../../images/bg-ticket.jpg");
+    background-size: cover;
+    background-position: center center; }
+    body .ticket-bg .bg-overlay {
+      background-color: rgba(0, 0, 0, 0.2); }
+    body .ticket-bg .card-deck .card {
+      border: none;
+      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+      background-color: white; }
+      body .ticket-bg .card-deck .card .card-header h4, body .ticket-bg .card-deck .card h1 {
+        transition: background-color 600ms, color 300ms ease;
+        color: #435fbf; }
+      body .ticket-bg .card-deck .card:nth-child(2) .card-header {
+        background: linear-gradient(45deg, #482cbf 0%, #6ac6f0 100%); }
+      body .ticket-bg .card-deck .card:nth-child(2) h4, body .ticket-bg .card-deck .card:nth-child(2) h1 {
+        color: white; }
+      body .ticket-bg .card-deck .card:hover .card-header {
+        background: linear-gradient(45deg, #482cbf 0%, #6ac6f0 100%); }
+      body .ticket-bg .card-deck .card:hover h4, body .ticket-bg .card-deck .card:hover h1 {
+        color: white; }
+      body .ticket-bg .card-deck .card .card-body a {
+        border: 2px solid;
+        border-image: linear-gradient(45deg, #482cbf 0%, #6ac6f0 100%);
+        border-image-slice: 1; }
+        body .ticket-bg .card-deck .card .card-body a:hover {
+          color: white;
+          background: linear-gradient(45deg, #482cbf 0%, #6ac6f0 100%); }
+  body h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Unica One", cursive;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body h4, body h3 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  body p, body a {
+    font-family: "Oswald", sans-serif; }
+  body .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  body .carousel-item .item {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4); }
+    body .carousel-item .item:hover .item-content {
+      background-color: rgba(0, 0, 0, 0.5); }
+    body .carousel-item .item .item-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      body .carousel-item .item .item-content h4 {
+        position: relative; }
+  body .item {
+    position: relative;
+    overflow: hidden; }
+    body .item .subitem-top {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 10%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      top: 0;
+      left: 0; }
+    body .item .subitem-bottom {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 10%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      bottom: 0;
+      right: 0; }
+    body .item .subitem-right {
+      position: absolute;
+      content: '';
+      width: 10%;
+      height: 90%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      top: 0;
+      right: 0; }
+    body .item .subitem-left {
+      position: absolute;
+      content: '';
+      width: 10%;
+      height: 90%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: width .3s, height .3s, border .6s, background .6s;
+      bottom: 0;
+      left: 0; }
+    body .item:hover .subitem-top, body .item:hover .subitem-bottom {
+      height: 0;
+      width: 100%; }
+    body .item:hover .subitem-left, body .item:hover .subitem-right {
+      width: 0;
+      height: 100%; }
+    body .item:hover .item-content {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 1px solid transparent; }
+    body .item:hover .img-bg img {
+      transform: scale(1); }
+    body .item .img-bg img {
+      width: 100%;
+      transform: scale(1.3);
+      transition: 800ms ease-in-out; }
+    body .item .item-content {
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 80%;
+      height: 80%;
+      color: white;
+      margin: auto;
+      border: .3rem solid white;
+      transition: width .4s, height .4s, border .6s, background .6s; }
+      body .item .item-content h4 {
+        position: absolute;
+        bottom: 0; }
+  body #feedback {
+    position: relative; }
+    body #feedback::before {
+      content: "feedback";
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Unica One", cursive;
+      font-size: 1.9rem;
+      font-weight: 500;
+      width: 5.4em;
+      height: 17%;
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      background-color: white;
+      text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: top 400ms ease; }
+    body #feedback:hover::before {
+      top: -17%; }
+  body footer .row {
+    background-color: black;
+    color: white; }
+
+@media (max-width: 992px) {
+  #feedback::before {
+    height: 33%; }
+  #feedback:hover::before {
+    top: -33%; } }
+@media (max-width: 576px) {
+  .introduce, .info-intro {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

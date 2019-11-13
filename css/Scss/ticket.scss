@@ -1,0 +1,54 @@
+@import "./common/common";
+@import "./common/mixin";
+
+.ticket-bg {
+  @include backgroundImg(url('../../images/bg-ticket.jpg'), cover);
+
+  .bg-overlay {
+    background-color: rgba(0,0,0,.2);
+  }
+
+  .card-deck {
+    .card {
+      border: none;
+      box-shadow: 2px 2px 20px rgba(0,0,0,.4);
+      background-color: white;
+
+      .card-header h4, h1 {
+        transition: background-color 600ms, color 300ms ease;
+        color: #435fbf;
+      }
+
+      &:nth-child(2) {
+        .card-header {
+          background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+        }
+
+        h4, h1 {
+          color: white;
+        }
+      }
+
+      &:hover {
+        .card-header {
+          background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+        }
+
+        h4, h1 {
+          color: white;
+        }
+      }
+
+      .card-body a {
+        border: 2px solid;
+        border-image: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+        border-image-slice: 1;
+
+        &:hover {
+          color: white;
+          background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+        }
+      }
+    }
+  }
+}

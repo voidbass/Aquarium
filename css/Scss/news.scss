@@ -1,0 +1,22 @@
+@import "./common/common";
+@import "./common/mixin";
+
+.news-bg {
+  @include backgroundImg (url("../../images/news-back.jpg"), cover);
+
+  .card {
+    border: none;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+    transition: 200ms ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 2px 6px 10px rgba(0,0,0,.6);
+    }
+
+    h4 {
+      color: black;
+    }
+  }
+}

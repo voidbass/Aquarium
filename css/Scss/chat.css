@@ -1,0 +1,51 @@
+#chat-onl {
+  position: fixed;
+  width: 320px;
+  height: 420px;
+  bottom: -60%;
+  right: 2%;
+  color: black;
+  transition: .3s;
+  z-index: 999; }
+  #chat-onl .contact-onl {
+    font-family: "Oswald", sans-serif;
+    border-radius: 0;
+    cursor: pointer; }
+  #chat-onl #message {
+    background-color: white; }
+    #chat-onl #message .info-chat {
+      border: 1px solid lightgray; }
+      #chat-onl #message .info-chat .icon-chat {
+        display: inline-block; }
+      #chat-onl #message .info-chat .title-chat {
+        font-family: "Oswald", sans-serif;
+        display: inline-block; }
+        #chat-onl #message .info-chat .title-chat span {
+          font-weight: 700; }
+      #chat-onl #message .info-chat .chat-web p {
+        font-family: "Pacifico", cursive;
+        height: 220px; }
+    #chat-onl #message .chat-user {
+      height: 50px;
+      border: 1px solid lightgray; }
+      #chat-onl #message .chat-user input {
+        font-family: "Pacifico", cursive;
+        width: 90%;
+        height: 48px;
+        border: none;
+        font-style: italic;
+        outline: none; }
+        #chat-onl #message .chat-user input::placeholder {
+          color: black !important; }
+
+.open {
+  bottom: -1% !important; }
+
+@media (max-width: 1200px) {
+  #chat-onl {
+    display: none; } }
+@media (max-height: 630px) {
+  #chat-onl {
+    display: none; } }
+
+/*# sourceMappingURL=chat.css.map */

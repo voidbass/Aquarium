@@ -1,0 +1,81 @@
+@import "font";
+@import "mixin";
+
+.item {
+  position: relative;
+  overflow: hidden;
+
+  .subitem-top {
+    @include boxSlide(90%, 10%);
+    top: 0;
+    left: 0;
+  }
+
+  .subitem-bottom {
+    @include boxSlide(90%, 10%);
+    bottom: 0;
+    right: 0;
+  }
+
+  .subitem-right {
+    @include boxSlide(10%, 90%);
+    top: 0;
+    right: 0;
+  }
+
+  .subitem-left {
+    @include boxSlide(10%, 90%);
+    bottom: 0;
+    left: 0;
+  }
+
+  &:hover {
+    .subitem-top, .subitem-bottom {
+      height: 0;
+      width: 100%;
+    }
+
+    .subitem-left, .subitem-right {
+      width: 0;
+      height: 100%;
+    }
+
+    .item-content {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 1px solid transparent;
+    }
+
+    .img-bg img {
+      transform: scale(1);
+    }
+  }
+
+  .img-bg img {
+    width: 100%;
+    transform: scale(1.3);
+    transition: 800ms ease-in-out;
+  }
+
+  .item-content {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+    color: white;
+    margin: auto;
+    border: .3rem solid white;
+    transition: width .4s, height .4s, border .6s, background .6s;
+
+    h4 {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

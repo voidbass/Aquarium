@@ -1,0 +1,31 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title DEMO
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/Scss/style.css')
+    // animate for carousel
+    link(rel='stylesheet', href='css/CSSLib/animate.css')
+    link(rel='stylesheet', href='css/CSSLib/owl.theme.css')
+    link(rel='stylesheet', href='css/CSSLib/owl.carousel.css')
+    // font
+    link(href='https://fonts.googleapis.com/css?family=Unica+One|Pacifico|Oswald|Josefin+Sans', rel='stylesheet', type='text/css')
+    // fontawesome
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css')
+
+body(data-spy="scroll" data-target=".navbar" data-offset="120")
+    block navbar
+
+    // Body
+    .container-fluid
+
+        block content
+
+
+    block script
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+        script(src='js/custom.js')
+        script(src='js/owl.carousel.min.js')

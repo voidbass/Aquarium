@@ -1,0 +1,36 @@
+section#ticket(style='box-sizing: border-box;')
+    .row.pl-sm-2.pr-sm-2.pl-2.pr-2.pb-sm-2.pb-2
+        .ticket-bg
+            .bg-overlay
+                h1.pt-sm-4.text-center.text-uppercase ticket
+                .card-deck.pl-sm-3.pr-sm-3.pt-sm-3.pb-sm-4.pl-3.pr-3.pt-3.pb-4.mr-sm-0.mr-0.wow.zoomInDown(data-wow-delay='0.4s')
+                    each num in [1, 2, 3, 4]
+                        // Bronze Ticket
+                        .card
+                            .card-header
+                                if num === 1
+                                    h4.text-center.text-uppercase bronze ticket
+                                    h1.text-center
+                                        sup $
+                                        | 29
+                                else if num === 2
+                                    h4.text-center.text-uppercase gold ticket
+                                    h1.text-center
+                                        sup $
+                                        | 49
+                                else if num === 3
+                                    h4.text-center.text-uppercase platinum ticket
+                                    h1.text-center
+                                        sup $
+                                        | 99
+                                else
+                                    h4.text-center.text-uppercase dinamond ticket
+                                    h1.text-center
+                                        sup $
+                                        | 199
+                            .card-body.text-center
+                                p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p.card-text
+                                    | Vivamus molestie congue iaculis. Nulla nisl magna, aliquet a elit eu, consequat vestibulum erat.
+                                p.card-text Aliquam ultrices ex dictum fermentum elementum.
+                                a.w-100.btn.text-center.text-uppercase(href='#') buy now !!

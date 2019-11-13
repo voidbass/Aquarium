@@ -1,0 +1,20 @@
+@import "./common/mixin";
+@import "./common/common";
+
+.owl-item {
+  width: 10%!important;
+}
+
+.owl-theme .owl-controls {
+  display: none!important;
+}
+
+.clickable {
+  display: none!important;
+}
+
+@import "./common/carousel";
+
+#discovery {
+  @include showInfo('discovery');
+}

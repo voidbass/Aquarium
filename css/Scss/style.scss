@@ -1,0 +1,36 @@
+@import "./common/font";
+
+body {
+    position: relative;
+    @import "navbar";
+    @import "banner";
+    @import "chat";
+    @import "discovery";
+    @import "about";
+    @import "news";
+    @import "ticket";
+    @import "feedback";
+
+    footer .row {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (max-width: 992px) {
+    #feedback {
+        &::before {
+            height: 33%;
+        }
+
+        &:hover::before {
+            top: -33%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .introduce, .info-intro {
+        text-align: center;
+    }
+}

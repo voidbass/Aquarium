@@ -1,0 +1,20 @@
+section#news(style='box-sizing: border-box;')
+    .row.pl-sm-2.pr-sm-2.pl-2.pr-2.pb-sm-2.pb-2
+        .news-bg
+            .bg-overlay
+                h1.pt-sm-4.text-center NEWS
+                .row.mr-sm-0.ml-sm-0.mr-0.ml-0
+                    each num in [1, 2, 3]
+                        // ITEM 1
+                        .col-lg-4.pt-sm-3.pb-sm-5.pb-5.wow.fadeInUp(data-wow-delay='0.2s')
+                            .card
+                                img.img-fluid.card-img-top(src='./images/news-image'+num+'.jpg', alt='Card image')
+                                .card-body
+                                    if num === 1
+                                        h4.card-title.text-center.text-uppercase RESOLUTION OF RARE PROBLEM SPECIES
+                                    else if num === 2
+                                        h4.card-title.text-center.text-uppercase Dubai Aquarium &amp; Underwater Zoo
+                                    else
+                                        h4.card-title.text-center.text-uppercase SeaWorld will stop capturing killer whales
+                                    p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                                    a.w-100.btn.btn-primary.stretched-link.text-uppercase(href='#') See More

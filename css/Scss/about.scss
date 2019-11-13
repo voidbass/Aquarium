@@ -1,0 +1,43 @@
+@import "./common/common";
+@import "./common/font";
+@import "./common/mixin";
+
+.intro {
+  padding: 0;
+  color: white;
+  @include backgroundImg(url("../../images/explore-bg2.jpg"), cover);
+}
+
+.about-us {
+  background-color: rgba(0,0,0,.3);
+  padding: 2rem;
+
+  .img-about {
+    position: relative;
+
+    img {
+      border-radius: .2rem;
+      width: 100%;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-about-founder {
+      border-radius: .2rem;
+      background-color: rgba(0,0,0,.3);
+      font-family: $font-unica;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top:74%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all 300ms ease;
+    }
+
+    &:hover .info-about-founder {
+      top: 0;
+    }
+  }
+}

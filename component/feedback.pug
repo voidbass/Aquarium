@@ -1,0 +1,50 @@
+- var count = 3;
+- var num = 1;
+
+section#feedback
+    .row.pl-sm-2.pr-sm-2.pl-2.pr-2.pb-sm-2.pb-2
+        .carousel.slide(id='#demo', data-ride='carousel')
+            // The slideshow
+            .carousel-inner
+                // Slide Feedback 2
+                each slide in [1, 2, 3]
+                    if slide === 1
+                        .carousel-item.active
+                            .row
+                                while num <= count
+                                    // Feedback 1
+                                    .col-md-4.col-12.col-sm-12.mb-sm-5.mb-5.mb-md-0
+                                        .item
+                                            .img-bg
+                                                img.img-fluid(src='./images/fb-' + (num++) + '.jpg', alt='')
+                                            .item-content.pt-sm-2.pl-sm-2.pt-xs-2.pt-xs-2.text-center
+                                                h4
+                                                    sup
+                                                        i.fas.fa-quote-right
+                                                    |  Maria
+                                                p Relax here is perfect
+                                            .subitem-top
+                                            .subitem-right
+                                            .subitem-bottom
+                                            .subitem-left
+                    else
+                        .carousel-item
+                            .row
+                                while num <= count
+                                    // Feedback 1
+                                    .col-md-4.col-12.col-sm-12.mb-sm-5.mb-5.mb-md-0
+                                        .item
+                                            .img-bg
+                                                img.img-fluid(src='./images/fb-' + (num++) + '.jpg', alt='')
+                                            .item-content.pt-sm-2.pl-sm-2.pt-xs-2.pt-xs-2.text-center
+                                                h4
+                                                    sup
+                                                        i.fas.fa-quote-right
+                                                    |  Maria
+                                                p Relax here is perfect
+                                            .subitem-top
+                                            .subitem-right
+                                            .subitem-bottom
+                                            .subitem-left
+
+                    - count += 3;

@@ -1,0 +1,22 @@
+h1 {
+  font-size: 4rem;
+  color: white;
+  font-family: $font-unica;
+  text-shadow: 1px 2px 5px rgba(0,0,0,.3);
+}
+
+h4, h3 {
+  color: white;
+  font-family: $font-josefin;
+  text-shadow: 1px 2px 5px rgba(0,0,0,.3);
+}
+
+p, a {
+  font-family: $font-oswald;
+}
+
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+}
